@@ -1,9 +1,19 @@
 package testie;
 
 public class HelloWorldie {
+
+	private String sentence = "I said ";
+
+	public String getSentence(){
+		return  sentence;
+	}
 	
 	public static void main(String[] args){
-		System.out.println("Hello Liliya!" );
+
+		HelloWorldie helloWorldie = new HelloWorldie();
+		System.out.println(helloWorldie.getSentence()+ "Hello Liliya!" );
 	}
+
+
 
 }
